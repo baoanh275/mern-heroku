@@ -12,7 +12,7 @@
     "install-client": "cd client && npm install",
     "build-client": "cd client && npm run build",
     "build-react-snap": "cd client && react-snap",
-    "heroku-postbuild": "npm run install-client && npm run build-client && npm run build-react-snap",
+    "heroku-postbuild": "npm run install-client && npm run build-client",
     "start": "node server.js",
     "client": "cd client && npm start",
     "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon server.js\" \"npm run client\""
